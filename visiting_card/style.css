@@ -1,0 +1,87 @@
+.container {
+    background-image: url(background_template.jpg);
+    background-size: cover;
+    position: relative; /* Added for positioning context */
+    height: 500px;
+    width: 700px;
+    margin-left: 400px;
+    margin-top: 120px;
+    box-shadow: 0px 0px 15px 5px  rgb(179, 174, 174);
+}
+
+.heading {
+    position: absolute; /* Positions relative to the container */
+    top: 20px; /* Distance from the top */
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.heading h1, p {
+    font-family: "Courgette", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0; /* Removes default h1 margin */
+}
+#fsd {
+    padding-left: 70px;
+    font-size: 25px;
+}
+.profile-photo {
+    margin-top: 50px;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the photo circular */
+    border: 3px solid white; /* Adds a white border */
+    object-fit: cover; /* Ensures photo maintains aspect ratio */
+    position: absolute;
+    top: 80px; /* Position below heading */
+    left: 40px; /* Position from left */
+    box-shadow: 0 2px 15px grey; /* Adds subtle shadow */
+}
+.contact-info {
+    position: absolute;
+    top: 150px;
+    left: 300px; /* Positioned to the right of the photo */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-item img {
+    height: 27px;
+    width: 27px;
+}
+.linkedin-img {
+    margin-left: 6px;
+}
+.github-img {
+    margin-left: 5px;
+}
+#loc-img {
+    height: 40px;
+    width: 40px;
+}
+.emoji {
+    font-size: 28px;
+}
+
+.contact-text {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+a.contact-text {
+    color: #0066cc;
+}
+
+a.contact-text:hover {
+    text-decoration: underline;
+}

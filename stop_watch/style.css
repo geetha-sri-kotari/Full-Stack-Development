@@ -1,0 +1,48 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    gap: 40px;
+}
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80%;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.679);
+    box-shadow: 5px 2px 2px 2px white;
+    height:  300px;
+    width: 300px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.start-btn , .stop-btn, .reset-btn {
+    height: 30px;
+    width: 90px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.679);
+}
+.start-btn:hover, .stop-btn:hover, .reset-btn:hover {
+    height: 32px;
+    width: 92px;
+    background-color: rgba(255, 255, 255, 0.753);
+    cursor: pointer;
+}
+.seconds, .minutes, .hours {
+    height: 40px;
+    width: 40px;
+    color: black;
+}
